@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h1>Ingrese Producto</h1>
+    </div>
+    <div>
+        <form method="POST" action="/productos">
+            <div>
+            <p>Nombre</p>
+            <input placeholder="Nombre" name="title"/>
+            </div>
+            <p>Precio</p>
+            <input placeholder="Precio" name="price" type="number"/>
+            <p>Imagen URL</p>
+            <input placeholder="Imagen" name="thumbnial"/>
+            <p></p>
+            <input value="Enviar" type="submit"/>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+    
+</body>
+</html>
