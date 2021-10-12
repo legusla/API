@@ -1,5 +1,7 @@
 [
  {
-    
+    "nombre": "algo",
+    "precio": 123,
+    "imagen": "imagen"
  }
 ]
