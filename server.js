@@ -19,6 +19,8 @@ app.post('/productos', function (req,res){
     res.render('pages/list-productos')
 });
 
+app.use('/api/productos', productosRouter);
+
 app.use(function (err, req, res, next) {
     console.error(error.stack);
     res.status(500).send('Algo se rompio!');
