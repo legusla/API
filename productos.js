@@ -10,3 +10,5 @@ productosRouter.post('/productos', async(req, res) => {
     res.send(...nuevoProducto);
     console.log(productoGuardado);
 });
+
+module.exports = productosRouter;
