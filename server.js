@@ -3,6 +3,9 @@ const app = express();
 
 const productosRouter = require('./productos');
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
