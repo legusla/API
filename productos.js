@@ -6,12 +6,12 @@ const productosContenedor = new Contenedor('./productos.json');
 
 const productosRouter = express.Router();
 
-productosRouter.post('/productos', async(req, res) => {
+productosRouter.post('./api/productos', async(req, res) => {
     const nuevoProducto = req.body;
 
     const productoGuardado = await productosContenedor.save(nuevoProducto);
 
-    res.redirect('/productos');
+    res.redirect('pages/productos');
 });
 
 module.exports = productosRouter;
