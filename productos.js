@@ -11,7 +11,10 @@ productosRouter.post('./api/productos', async(req, res) => {
 
     const productoGuardado = await productosContenedor.save(nuevoProducto);
 
-    res.redirect('pages/productos');
+    res.redirect('/productos');
+    res.send({
+        data: productoGuardado
+    })
 });
 
 module.exports = productosRouter;
