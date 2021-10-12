@@ -1,5 +1,9 @@
 const express = require('express');
 
+const Contenedor = require('../Contenedor');
+
+const productosContenedor = new Contenedor('productos.json');
+
 const productosRouter = express.Router();
 
 productosRouter.post('/productos', async(req, res) => {
@@ -12,3 +16,5 @@ productosRouter.post('/productos', async(req, res) => {
 });
 
 module.exports = productosRouter;
+
+console.log(__dirname);
