@@ -2,7 +2,7 @@ const express = require('express');
 
 const Contenedor = require('./Contenedor');
 
-const productosContenedor = new Contenedor('./productos.js');
+const productosContenedor = new Contenedor('./productos');
 
 const productosRouter = express.Router();
 
