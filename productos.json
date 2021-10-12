@@ -1,7 +1,32 @@
 [
- {
+  {
     "nombre": "algo",
     "precio": 123,
-    "imagen": "imagen"
- }
+    "imagen": "imagen",
+    "id": null
+  },
+  {
+    "nombre": "algo",
+    "precio": 123,
+    "imagen": "imagen",
+    "id": 1
+  },
+  {
+    "nombre": "algo",
+    "precio": 123,
+    "imagen": "imagen",
+    "id": 2
+  },
+  {
+    "nombre": "algo",
+    "precio": 123,
+    "imagen": "imagen",
+    "id": 3
+  },
+  {
+    "nombre": "algo",
+    "precio": 123,
+    "imagen": "imagen",
+    "id": 4
+  }
 ]
