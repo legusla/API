@@ -14,6 +14,7 @@ productosRouter.post('/', async(req, res) => {
     res.redirect('/productos')
 });
 
+
 module.exports = productosRouter;
 
 console.log(__dirname);
