@@ -21,7 +21,7 @@ app.get('/productos', function (req,res){
 });
 
 app.post('/productos', function (req,res){
-    res.render('pages/list-productos')
+    res.render('pages/list-productos', productosRouter)
 });
 
 app.use('/api/productos', productosRouter);
