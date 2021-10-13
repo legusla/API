@@ -4,6 +4,8 @@ const app = express();
 
 const productosRouter = require('./productos');
 
+const productos = []
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
