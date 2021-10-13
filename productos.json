@@ -1,3 +1,14 @@
 [
-  
+  {
+    "nombre": "qwe",
+    "precio": "123",
+    "imagen": "qwe",
+    "id": 1
+  },
+  {
+    "nombre": "",
+    "precio": "",
+    "imagen": "",
+    "id": 2
+  }
 ]

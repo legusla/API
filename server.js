@@ -1,7 +1,10 @@
 const express = require('express');
+const Contenedor = require('./Contenedor');
 const app = express();
 
 const productosRouter = require('./productos');
+
+const productos = []
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -17,11 +20,13 @@ app.get('/form', function(req, res) {
 });
 
 app.get('/productos', function (req,res){
-    res.render('pages/list-productos')
+    res.render('pages/list-productos', {
+       productos
+    })
 });
 
 app.post('/productos', function (req,res){
-    res.render('pages/list-productos', productosRouter)
+    res.render('pages/list-productos')
 });
 
 app.use('/api/productos', productosRouter);
