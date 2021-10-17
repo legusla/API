@@ -9,11 +9,10 @@ const productosRouter = express.Router();
 productosRouter.post('/', async(req, res) => {
     const nuevoProducto = req.body;
 
-    const productoGuardado = await productosContenedor.save(nuevoProducto);    
+    const productoGuardado = await productosContenedor.save(nuevoProducto);
 
     res.redirect('/productos')
 });
-
 
 module.exports = productosRouter;
 
