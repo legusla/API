@@ -14,7 +14,7 @@
         <h1>Vista de Productos</h1>
     </div>
     <div>
-        <ul>
+        <ul style="list-style:none">
             <% productos.forEach( producto => { %>
                 <li>
                     <%= producto.nombre %>
@@ -23,7 +23,11 @@
                     <%= producto.precio %>
                 </li>
                 <li>
-                    <%= producto.imagen %>
+                    <img style="max-width: 4%;"
+
+                    src= <%= producto.imagen %>
+
+                    >
                 </li>
             <% }); %>
         </ul>

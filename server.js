@@ -20,13 +20,10 @@ app.get('/form', function(req, res) {
 });
 
 app.get('/productos',  async function (req,res){
-    
-        productos = await productosContenedor.getAll();
-    
-        res.render('pages/list-productos', {
-           productos
-           
-        }) 
+    productos = await productosContenedor.getAll();
+    res.render('pages/list-productos', {
+       productos
+    })
 });
 
 app.post('/productos', function (req,res){
